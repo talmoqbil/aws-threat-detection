@@ -1,0 +1,14 @@
+{
+  "Records": [
+    {
+      "s3": {
+        "bucket": {
+          "name": "aws-cloudtrail-logs-699222026265-23022a2a"
+        },
+        "object": {
+          "key": "AWSLogs/test-log.json"
+        }
+      }
+    }
+  ]
+}

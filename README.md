@@ -23,6 +23,19 @@ The system automates security monitoring by detecting:
 ##  Architecture Diagram
 - Will be added in due time.
 
+##  How It Works
+- CloudTrail logs AWS API calls to an S3 bucket.  
+- S3 event notifications trigger Lambda when a new log is added.  
+- Lambda scans the logs for suspicious activities (e.g., `CreateUser`).  
+- If a threat is detected, SNS sends a security alert. 
+
+## 📜 IAM Permissions
+The Lambda function **requires**:
+
+- S3 Read Access
+- SNS Publish Access
+- CloudWatch Logging
+
 ##  Deployment Steps
 
 ### 1.  Enable CloudTrail
@@ -57,6 +70,8 @@ The system automates security monitoring by detecting:
 - Implement automated remediation via AWS Lambda.  
 
 ---
+## Demo
+- Contact me at tariqalmegbel@gmail.com for a demo video as requirements may change and videos may be outdated.
 
 ## References
 - [AWS CloudTrail Docs](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-introduction.html)
