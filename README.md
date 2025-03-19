@@ -1,4 +1,4 @@
-# NEW & IMPROVED: AWS Serverless Threat Detection System
+# Improved: AWS Serverless Threat Detection System
 
 ##  Project Overview
 This project sets up an AWS Serverless Threat Detection System using:
@@ -29,7 +29,7 @@ The system automates security monitoring by detecting:
 - Lambda scans the logs for suspicious activities (e.g., `CreateUser`).  
 - If a threat is detected, SNS sends a security alert. 
 
-## 📜 IAM Permissions
+## IAM Permissions
 The Lambda function **requires**:
 
 - S3 Read Access
